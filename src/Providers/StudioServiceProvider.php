@@ -26,15 +26,5 @@ class StudioServiceProvider extends ServiceProvider
             BotManMakeTest::class,
             BotManCacheClear::class,
         ]);
-
-        $this->discoverCommands();
-    }
-
-    /**
-     * Auto-discover BotMan commands and load them.
-     */
-    public function discoverCommands()
-    {
-        $this->commands(Discovery::getInstance()->get('botman/commands'));
     }
 }
